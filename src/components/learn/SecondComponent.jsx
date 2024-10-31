@@ -1,6 +1,6 @@
 const ThirdComponent = () => {
     return (
-        <div>Second Component</div>
+        <div>Third Component</div>
     )
 
 }

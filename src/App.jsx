@@ -27,6 +27,7 @@ const App = () => {
       <h1>Hello World</h1>
       <MyComponent/>
       <SecondComponent/>
+      <ThirdComponent/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
