@@ -1,0 +1,70 @@
+.todo-title{
+    font-size: 35px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.todo-btn{
+    text-align: center;
+    background-color: aqua;
+    border-radius: 20% ;
+    margin: 7px;
+
+}
+
+.todo-new{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.todo-content{
+    margin: 50px auto;
+    width: 600px;
+}
+
+.todo-data{
+    margin-top: 20px;
+    border-radius: 5px ;
+    border: 1px solid #ccc;
+    padding: 15px ;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.todo-image{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
