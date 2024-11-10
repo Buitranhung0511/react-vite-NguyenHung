@@ -12,12 +12,16 @@ const App = () => {
 
   const addNewToDo = (name) => {
     const newTodo = {
-      id: randomIntFromInterval(1, 1000000), //truyền hàm random vào đây để khi thêm mới 1 cái id sẽ thay đổi 
+      id: randomIntFromInterval(1, 100), //truyền hàm random vào đây để khi thêm mới 1 cái id sẽ thay đổi 
       name: name
     }
-
     setTodoList([...todoList, newTodo])
   }
+
+  const deleteToDo = (id) => {
+    const newTodo = todoList.filter(item => item.id !== id)// giữ lại các các id giống cái id bắt được từ function 
+    setTodoList(newTodo);
+  } 
 
   const randomIntFromInterval = (min, max) => { // Hàm này để sử dụng random id với xác suất nhỏ, nhưng vẫn có khả năng
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -36,6 +40,7 @@ const App = () => {
         ?
         < TodoData
           todoList={todoList}
+          deleteToDo = {deleteToDo}
         />
         :
         <div className='todo-image'>
@@ -44,17 +49,6 @@ const App = () => {
 
       }
 
-      {/* {todoList.length > 0 &&
-        < TodoData
-          todoList={todoList}
-        />
-      }
-      {todoList.length === 0 &&
-
-        <div className='todo-image'>
-          <img src={reactLogo} className='logo' />
-        </div>
-      } */}
     </div>
   )
 }
