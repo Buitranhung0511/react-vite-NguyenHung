@@ -3,7 +3,7 @@ import './header.css'
 
 const Header = () => {
     return (
-        <ul>
+        <ul className='hoidanit'>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/user">User</NavLink></li>
             <li><NavLink to="/books">Books</NavLink></li>
